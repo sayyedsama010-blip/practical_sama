@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button id="btn">Click</button>
+<input id="box" placeholder="Type here">
+
+<script>
+function show() {
+  alert("Button clicked");
+}
+
+btn.addEventListener("click", show);
+
+box.addEventListener("keydown", () => {
+  console.log("Key pressed");
+});
+
+setTimeout(() => {
+  btn.removeEventListener("click", show);
+}, 5000);
+</script>
+
+</body>
+</html>

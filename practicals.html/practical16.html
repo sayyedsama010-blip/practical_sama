@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Show Hide Toggle</title>
+  <style>
+    #box {
+      width: 150px;
+      height: 80px;
+      background: skyblue;
+      margin-top: 10px;
+      text-align: center;
+      line-height: 80px;
+    }
+    .active {
+      background: orange;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <button onclick="toggle()">Toggle</button>
+
+  <div id="box">Hello</div>
+
+  <script>
+    function toggle() {
+      let box = document.getElementById("box");
+      box.style.display = box.style.display === "none" ? "block" : "none";
+      box.classList.toggle("active");
+    }
+  </script>
+
+</body>
+</html>

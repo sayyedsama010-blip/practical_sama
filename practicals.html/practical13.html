@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Defined Function & Scope Demonstration</title>
+</head>
+<body>
+    <h2>User-Defined Function and Scope Example</h2>
+    <button onclick="showResult()">Click Here</button>
+    <p id="output"></p>
+    <script>
+        function showResult() {
+            var a = 10;
+            let b = 20;
+            const c = 30;
+            if (true) {
+                var x = "Var Variable";
+                let y = "Let Variable";
+                const z = "Const Variable";
+                document.getElementById("output").innerHTML =
+                    "Inside Block:<br>" +
+                    x + "<br>" +
+                    y + "<br>" +
+                    z + "<br><br>";
+            }
+            document.getElementById("output").innerHTML +=
+                "Outside Block:<br>" +
+                x;
+        }
+    </script>
+</body>
+</html>

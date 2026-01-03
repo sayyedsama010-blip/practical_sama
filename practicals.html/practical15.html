@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Mobile-First Page</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            margin: 10px;
+            padding: 15px;
+            background-color: white;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .content {
+            margin-top: 15px;
+        }
+
+        .card {
+            background-color: #e9e9e9;
+            margin-bottom: 15px;
+            padding: 15px;
+            border-radius: 6px;
+        }
+
+        footer {
+            margin-top: 15px;
+            padding: 10px;
+            text-align: center;
+            background-color: #333;
+            color: white;
+        }
+
+        @media (min-width: 600px) {
+            .container {
+                margin: 20px;
+                padding: 20px;
+            }
+
+            .content {
+                display: flex;
+                gap: 20px;
+            }
+
+            .card {
+                flex: 1;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .container {
+                max-width: 1000px;
+                margin: 40px auto;
+                padding: 30px;
+            }
+
+            header {
+                padding: 25px;
+                font-size: 24px;
+            }
+
+            .card {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Responsive Web Page</h1>
+        <p>Mobile-First Design using Media Queries</p>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <div class="card">
+                <h3>Section 1</h3>
+                <p>This layout adapts based on screen size using CSS media queries.</p>
+            </div>
+
+            <div class="card">
+                <h3>Section 2</h3>
+                <p>Margins control spacing outside elements, padding controls spacing inside.</p>
+            </div>
+
+            <div class="card">
+                <h3>Section 3</h3>
+                <p>Mobile-first ensures better performance and usability.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        © 2026 sama-11267
+    </footer>
+
+</body>
+</html>

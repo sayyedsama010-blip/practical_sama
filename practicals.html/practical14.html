@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation using JavaScript Events</title>
+    <script>
+        function validateName() {
+            let name = document.getElementById("name").value;
+            if (name.length < 3) {
+                document.getElementById("nameMsg").innerHTML =
+                    "Name must be at least 3 characters";
+            } else {
+                document.getElementById("nameMsg").innerHTML = "";
+            }
+        function validateForm() {
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            if (name === "" || email === "") {
+                alert("All fields are required!");
+                return false; 
+            }
+            if (name.length < 3) {
+                alert("Name must be at least 3 characters long");
+                return false;
+            }
+            alert("Form submitted successfully!");
+            return true; 
+        }
+        }
+    </script>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form onsubmit="return validateForm()">
+        Name:
+        <input type="text" id="name" oninput="validateName()">
+        <span id="nameMsg" style="color:red;"></span>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

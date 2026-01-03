@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Selectors Demo</title>
+
+    <style>
+        * {
+            font-family: Arial, sans-serif;
+        }
+
+        #main-title {
+            color: darkred;
+            text-align: center;
+        }
+
+        .highlight {
+            color: blue;
+            font-weight: bold;
+        }
+
+        div p {
+            background-color: #f0f0f0;
+            padding: 8px;
+        }
+
+        h2, h3, footer {
+            color: green;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="main-title">CSS Selectors Example</h1>
+
+    <h2>Class Selector</h2>
+    <p class="highlight">This paragraph uses a class selector.</p>
+
+    <h2>Descendant Selector</h2>
+    <div>
+        <p>This paragraph is inside a div (descendant selector applied).</p>
+    </div>
+
+    <h3>Group Selector</h3>
+    <p>This text is normal.</p>
+
+    <footer>
+        © 2026 sama-11267
+    </footer>
+
+</body>
+</html>
